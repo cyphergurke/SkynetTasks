@@ -66,7 +66,7 @@ const App: React.FC = () => {
             completedTodos={completedTodos} setCompletedTodos={setCompletedTodos}
           />
 
-          <span className='heading'>Taskify</span>
+          <span className='heading'>Skynet Tasks</span>
           <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
           <TodoList todos={todos} setTodos={setTodos}
             completedTodos={completedTodos} setCompletedTodos={setCompletedTodos}

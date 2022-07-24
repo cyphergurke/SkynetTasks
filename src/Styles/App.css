@@ -23,8 +23,10 @@ html {
 }
 @media (max-width: 800px) {
   .heading {
-    margin: 15px 0;
-    font-size: 35px;
+    margin: 23px 0;
+    font-size: 20px;
+    position: relative;
+    margin-right: 40%;
   }
 }
 
@@ -98,14 +100,21 @@ html {
 
 .todos__sinlge--text {
   flex: 1;
-  padding: 5px;
   border: none;
-  font-size: 20px;
+  font-size: 24px;
   color: white;
   padding-left: 20px;
+  background: transparent;
 }
 .todos__sinlge--text:focus {
   outline: none;
+}
+.todos__sinlge--text input {
+  padding: 5px;
+  font-size: 22px;
+  background-color: transparent;
+  border-radius: 7px;
+  width: 95%;
 }
 
 .todos__heading {
@@ -220,6 +229,7 @@ html {
 
 .load {
   background-color: #3fda10;
+  bottom: 2%;
   left: 5%;
 }
 
@@ -228,9 +238,4 @@ html {
   background-color: #3fda10;
   bottom: 2%;
   right: 5%;
-}
-@media screen and (max-width: 700px) {
-  .save {
-    left: 40%;
-  }
 }/*# sourceMappingURL=App.css.map */

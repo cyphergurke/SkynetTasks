@@ -20,8 +20,10 @@ html
     text-align: center
 
     @media (max-width: 800px)
-        margin: 15px 0
-        font-size: 35px
+        margin: 23px 0
+        font-size: 20px
+        position: relative
+        margin-right: 40%
 
 .input
     display: flex
@@ -85,14 +87,20 @@ html
 
 .todos__sinlge--text
     flex: 1
-    padding: 5px
     border: none
-    font-size: 20px
+    font-size: 24px
     color: white
     padding-left: 20px
+    background: transparent
 
     &:focus
         outline: none
+    input
+        padding: 5px
+        font-size: 22px
+        background-color: transparent
+        border-radius: 7px
+        width: 95%
 
 .todos__heading
     text-transform: uppercase
@@ -186,6 +194,7 @@ html
 
 .load
     background-color: #3fda10
+    bottom: 2%
     left: 5%
 
 .save
@@ -193,6 +202,3 @@ html
     background-color: #3fda10
     bottom: 2%
     right: 5%
-
-    @media screen and (max-width: 700px )
-        left: 40%

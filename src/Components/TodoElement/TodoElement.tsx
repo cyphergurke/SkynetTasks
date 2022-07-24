@@ -55,18 +55,19 @@ export const TodoElement = ({ index, todo, todos, setTodos }: Props) => {
                     ref={provided.innerRef}
                     className={`todos__single ${snapshot.isDragging ? "drag" : ""}`}
                 >
-                    {edit ? (
-                        <input className="todos__single--text"
-                            ref={inputRef}
-                            value={editTodo}
-                            onChange={(e) => setEditTodo(e.target.value)}
-                        />
-                    ) : (todo.isDone ? (
-                        <s className='todos__sinlge--text'>{todo.todo}</s>
-                    ) : (
-                        <span className='todos__sinlge--text'>{todo.todo}</span>
-                    ))}
-
+                    <div className='todos__sinlge--text'>
+                        {edit ? (
+                            <input
+                                ref={inputRef}
+                                value={editTodo}
+                                onChange={(e) => setEditTodo(e.target.value)}
+                            />
+                        ) : (todo.isDone ? (
+                            <s >{todo.todo}</s>
+                        ) : (
+                            <span  >{todo.todo}</span>
+                        ))}
+                    </div>
                     <div>
                         <span className='icon' onClick={() => {
                             if (!edit && !todo.isDone) {
