@@ -1,0 +1,58 @@
+.portalsettings {
+    margin-bottom: 40px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.portalsettings button {
+    background-color: transparent;
+    border: none;
+}
+
+.defaultPortals {
+    left: 10%;
+    position: absolute;
+}
+
+.defaultPortals button {
+    cursor: pointer;
+}
+
+.customportal {
+    color: #000;
+    font-size: 18px;
+    width: 400px;
+    right: 1%;
+    position: absolute;
+}
+
+.customportal input {
+    width: 150px;
+    height: 20px;
+    margin: -40px 0 0 0px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+}
+
+.customportal button {
+    margin-left: 20px;
+    background-color: #1DB954;
+    width: 80px;
+    height: 25px;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.2s;
+}
+
+.customportal:hover button {
+    box-shadow: 2px 2px 7px rgb(138, 138, 138);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.customportal:active button {
+    transform: scale(0.05);
+}

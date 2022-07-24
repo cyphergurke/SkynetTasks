@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap')
+html
+    min-height: 100%
+    background: rgb(52, 66, 218)
+    background: linear-gradient(294deg, rgba(52, 66, 218, 1) 0%, rgba(190, 105, 255, 1) 32%, rgba(0, 241, 255, 1) 100%)
+
+.App
+    min-height: calc(100vh - 170px)
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.heading
+    text-transform: uppercase
+    font-size: 40px
+    margin: 30px 0 30px 0
+    color: white
+    z-index: 1
+    text-align: center
+
+    @media (max-width: 800px)
+        margin: 15px 0
+        font-size: 35px
+
+.input
+    display: flex
+    width: 95%
+    position: relative
+    align-items: center
+
+    @media screen and (max-width: 700px)
+        width: 90%
+
+.input__box
+    width: 100%
+    border-radius: 50px
+    padding: 20px 30px
+    font-size: 25px
+    border: none
+    transition: 0.2s
+    box-shadow: inset 0 0 5px black
+
+    &:focus
+        box-shadow: 0 0 10px 1000px rgb(0, 0, 0, 0.5)
+        outline: none
+
+.input__submit
+    position: absolute
+    width: 50px
+    height: 50px
+    margin: 12px
+    border-radius: 50px
+    right: 0px
+    border: none
+    font-size: 15px
+    background-color: #2f74c0
+    color: white
+    transition: 0.2s all
+    box-shadow: 0 0 10px black
+
+    &:hover
+        background-color: #388ae2
+
+    &:active
+        transform: scale(0.8)
+        box-shadow: 0 0 5px black
+
+.todos__single
+    background: rgb(52,55,218)
+    background: linear-gradient(294deg, rgba(52,55,218,1) 38%, rgba(192,0,255,1) 100%, rgba(0,213,196,1) 100%)
+    display: flex
+    width: 100%
+    border-radius: 5px
+    padding: 10px 0 10px 0
+    margin-top: 15px
+    transition: 0.2s
+
+    @media screen and (max-width: 700px)
+        width: 100%
+
+    &:hover
+        box-shadow: 0 0 5px #ff9797
+        transform: scale(1.01)
+
+.todos__sinlge--text
+    flex: 1
+    padding: 5px
+    border: none
+    font-size: 20px
+    color: white
+    padding-left: 20px
+
+    &:focus
+        outline: none
+
+.todos__heading
+    text-transform: uppercase
+    font-size: 20px
+    color: black
+    z-index: 1
+    text-align: center
+    font-weight: 600
+
+.icon
+    padding: 10px
+    font-size: 25px
+    cursor: pointer
+    color: white
+
+.todos
+    border-radius: 5px
+    display: flex
+    margin: 10px
+    flex-direction: column
+    width: 46%
+    padding: 15px
+    background: rgb(52,218,71)
+    background: linear-gradient(294deg, rgba(52,218,71,1) 0%, rgba(255,252,0,1) 40%, rgba(0,213,196,1) 100%)
+
+    @media screen and (max-width: 1100px)
+        width: 45%
+    @media screen and (max-width: 700px)
+        width: 90%
+
+.container
+    width: 95%
+    height: 100%
+    display: flex
+    margin: 10px 0 80px 0
+    justify-content: space-between
+    align-items: flex-start
+    padding-bottom: 30px
+
+    @media screen and (max-width: 700px )
+        flex-direction: column
+        align-items: center
+
+.remove
+    background: rgb(218,52,52)
+    background: linear-gradient(294deg, rgba(218,52,52,1) 0%, rgba(218,91,242,1) 46%, rgba(213,121,0,1) 100%)
+
+.dragactive
+    background: rgb(218,52,170)
+    background: linear-gradient(294deg, rgba(218,52,170,1) 38%, rgba(192,0,255,1) 100%, rgba(0,213,196,1) 100%)
+
+.dragcomplete
+    background: rgb(232,255,0)
+    background: linear-gradient(294deg, rgba(232,255,0,1) 4%, rgba(108,218,52,1) 38%, rgba(0,213,196,1) 100%)
+
+.drag
+    box-shadow: 0 0 20 black
+
+.footer
+    border: 1px black
+    width: 100vw
+    background: rgb(0, 255, 214)
+    background: linear-gradient(294deg, rgba(0, 255, 214, 1) 4%, rgba(108, 218, 52, 1) 100%, rgba(0, 213, 196, 1) 100%)
+    position: relative
+
+.mysky__button
+    margin: 20px 0 0 0
+    padding: 10px
+    font-size: 18px
+    position: absolute
+    right: 5%
+    border: none
+    width: 100px
+    border-radius: 7px
+    box-shadow: 4px 4px 7px #656565
+    transition: 0.2s
+    color: #000
+
+    &:hover
+        transform: scale(1.05)
+    &:active
+        transform: scale(0.95)
+
+.logout
+    background-color: #f7ff08
+    right: 5%
+
+.login
+    background-color: #3fda10
+    right: 5%
+
+.load
+    background-color: #3fda10
+    left: 5%
+
+.save
+    position: fixed
+    background-color: #3fda10
+    bottom: 2%
+    right: 5%
+
+    @media screen and (max-width: 700px )
+        left: 40%
